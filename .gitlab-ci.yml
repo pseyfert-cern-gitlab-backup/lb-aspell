@@ -9,4 +9,4 @@ note:
 
 spellcheck:
     script:
-      - make batch-spellcheck
+      - make batch-spellcheck -k
