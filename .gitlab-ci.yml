@@ -1,0 +1,12 @@
+image: gitlab-registry.cern.ch/pseyfert/lxplus-like-dockerfile
+
+note:
+    script:
+      - make
+    artifacts:
+      paths:
+        - main.pdf
+
+spellcheck:
+    script:
+      - make batch-spellcheck
