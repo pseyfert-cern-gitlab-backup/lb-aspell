@@ -9,4 +9,9 @@ note:
 
 spellcheck:
     script:
-      - make batch-spellcheck
+      - touch spelling-mistakes.txt
+      - make batch-spellcheck -k -j 1
+      - sort -u -o spelling-mistakes.txt spelling-mistakes.txt
+    artifacts:
+      paths:
+        - spelling-mistakes.txt
